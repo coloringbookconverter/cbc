@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CycleGAN Coloring Book Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 40px;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    code {
+      background-color: #f5f5f5;
+      padding: 2px 4px;
+      font-family: "Courier New", monospace;
+    }
+  </style>
+</head>
+<body>
+  <h1>CycleGAN Coloring Book Generator</h1>
+
+  <h2>Description</h2>
+  <p>
+    The CycleGAN Coloring Book Generator is a project that employs the CycleGAN (Cycle-Consistent Generative Adversarial Network) architecture to transform normal photos into coloring book versions. By leveraging the power of CycleGAN, the project enables the conversion of images from one domain (normal photos) to another domain (coloring book line drawings) without the need for paired training data. The generator network learns to map images from the source domain to the target domain, while the discriminator network provides feedback to ensure the realism of the generated coloring book images. This project provides a user-friendly interface to facilitate the seamless generation of coloring book versions from user-supplied photographs.
+  </p>
+
+  <h2>Table of Contents</h2>
+  <ul>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#technologies">Technologies</a></li>
+    <li><a href="#dataset">Dataset</a></li>
+    <li><a href="#training">Training</a></li>
+    <li><a href="#results">Results</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+  </ul>
+
+  <h2 id="installation">Installation</h2>
+  <p>
+    To use this project locally, follow the steps below:
+  </p>
+  <ol>
+    <li>Clone the repository: <code>git clone https://github.com/your-username/cyclegan-coloring-book-generator.git</code></li>
+    <li>Install the required dependencies: <code>pip install -r requirements.txt</code></li>
+  </ol>
+
+  <h2 id="usage">Usage</h2>
+  <ol>
+    <li>Prepare your normal photos dataset and ensure they are in a compatible format (e.g., JPEG, PNG).</li>
+    <li>Run the script <code>train_cyclegan.py</code> to train the CycleGAN model on your dataset.</li>
+    <li>After training, run the script <code>generate_coloring_book.py</code> to generate coloring book versions from your input photos.</li>
+    <li>Provide the path to your input photo.</li>
+    <li>Click on the "Generate" button to create the coloring book version.</li>
+    <li>Find the output coloring book image in the specified output folder.</li>
+  </ol>
+
+  <h2 id="features">Features</h2>
+  <ul>
+    <li>Conversion of normal photos into coloring book versions using CycleGAN.</li>
+    <li>Training of the CycleGAN model on user-supplied datasets.</li>
+    <li>User-friendly interface for seamless interaction and effortless generation of coloring book images.</li>
+    <li>Real-time preview of the generated coloring book transformation.</li>
+  </ul>
+
+  <h2 id="technologies">Technologies</h2>
+  <ul>
+    <li>Python: Programming language used for development.</li>
+    <li>PyTorch: Deep learning framework for training and implementing the CycleGAN model.</li>
+    <li>OpenCV: Library for image processing and manipulation.</li>
+    <li>GUI Framework (e.g., Tkinter): Used for creating the user interface.</li>
+  </ul>
+
+  <h2 id="dataset">Dataset</h2>
+  <p>
+    The project requires a dataset of normal photos for training the CycleGAN model. The dataset should consist of unpaired images, containing only normal photos without corresponding coloring book line drawings. The dataset can be collected from various sources or created manually by gathering a diverse range of normal photos.
+  </p>
+
+  <h2 id="training">Training</h2>
+  <p>
+    The project involves training the CycleGAN model on the unpaired dataset of normal photos. The <code>train_cyclegan.py</code> script handles the training process, including data loading, model configuration, and optimization.
+  </p>
+
+  <h2 id="results">Results</h2>
+  <p>
+    The quality and realism of the generated coloring book images depend on the training data, model architecture, and the inherent characteristics of the input photos. The project aims to provide visually appealing coloring book versions that capture the essence and content of the original photos, bridging the gap between digital photography and traditional coloring activities.
+  </p>
+
+  <h2 id="contributing">Contributing</h2>
+  <p>
+    Contributions to the project are welcome! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request.
+  </p>
+
+  <h2 id="license">License</h2>
+  <p>
+    This project is licensed under the <a href="LICENSE">MIT License</a>.
+  </p>
+</body>
+</html>
