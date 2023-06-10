@@ -129,7 +129,16 @@ body {
     <div class="container">
       <h2 class="university-section__title">Dataset</h2>
       <p>
-        The project requires a dataset of normal photos for training the CycleGAN model. The dataset should consist of unpaired images, containing only normal photos without corresponding coloring book line drawings. The dataset can be collected from various sources or created manually by gathering a diverse range of normal photos.
+        The dataset used in this project consists of two domains: Domain X and Domain Y.
+
+        <li>Domain X:
+          Domain X comprises real-world photos sourced from the Open Images dataset. 
+          Open Images is a large-scale dataset containing millions of images from diverse categories. The real-world photos in Domain X capture a wide range of subjects, scenes, and objects, providing a rich and varied source of visual data.
+          </li>
+<li>Domain Y:
+Domain Y consists of sketches collected from museums around the world, specifically from the Imagenet-Sketch dataset. Imagenet-Sketch is a curated collection of hand-drawn sketches that represent different objects, animals, and scenes. These sketches have been created by artists and serve as a valuable resource for generating coloring book line drawings.
+</li>
+By using these two distinct domains, the project aims to leverage the diversity and characteristics of both real-world photos and hand-drawn sketches to train the CycleGAN model. This unpaired dataset allows the model to learn the mapping between the two domains and generate coloring book versions of real-world photos without the need for directly paired training examples.
       </p>
     </div>
   </section>
