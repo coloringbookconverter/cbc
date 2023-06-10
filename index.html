@@ -1,94 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CycleGAN Coloring Book Generator</title>
+  <link rel="stylesheet" href="https://university-styles.herokuapp.com/assets/css/northwestern-styles.min.css">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-    }
-
-    h1 {
-      text-align: center;
-    }
-
-    h2 {
-      margin-top: 40px;
-    }
-
-    ul {
-      list-style-type: disc;
-      margin-left: 20px;
-    }
-
-    code {
-      background-color: #f5f5f5;
-      padding: 2px 4px;
-      font-family: "Courier New", monospace;
-    }
+    /* Custom styles for the project */
+    /* Add your custom CSS here */
   </style>
 </head>
+
 <body>
-  <h1>CycleGAN Coloring Book Generator</h1>
 
-  <h2>Description</h2>
-  <p>
-    The CycleGAN Coloring Book Generator is a project that employs the CycleGAN (Cycle-Consistent Generative Adversarial Network) architecture to transform normal photos into coloring book versions. By leveraging the power of CycleGAN, the project enables the conversion of images from one domain (normal photos) to another domain (coloring book line drawings) without the need for paired training data. The generator network learns to map images from the source domain to the target domain, while the discriminator network provides feedback to ensure the realism of the generated coloring book images. This project provides a user-friendly interface to facilitate the seamless generation of coloring book versions from user-supplied photographs.
-  </p>
-
-  <h2 id="Motivation">Motivation</h2>
-  <p>
-    Why should you care as adults?
-  </p>
-  <p>    
-  The coloring book generator serves as an offline stress reduction alternative, providing individuals with a creative outlet to unwind and relax. Engaging in coloring activities has been shown to have therapeutic benefits, allowing individuals to escape from everyday stressors and focus their attention on a calming and enjoyable task. By using the coloring book generator, users can easily transform normal photos into coloring book versions, which encourages artistic expression and helps improve fine motor skills. This process can be seen as a hobby, allowing individuals to engage in a pleasurable and rewarding activity during their leisure time. One of the notable advantages of using the coloring book generator is the sense of achievement it brings. As users witness the transformation of their favorite photos into coloring book pages, they experience a sense of accomplishment and satisfaction. This feeling of achievement can boost self-confidence and provide a positive emotional experience.
-  Overall, the coloring book generator serves as an enjoyable and fulfilling activity that promotes stress reduction, encourages artistic expression, improves motor skills, and provides a sense of achievement. By engaging in this offline hobby, individuals can enhance their well-being and find a creative outlet for relaxation and self-expression.
-  </p>
-
-  <h2 id="features">Features</h2>
-  <ul>
-    <li>Conversion of normal photos into coloring book versions using CycleGAN.</li>
-  </ul>
-
-  <h2 id="technologies">Technologies</h2>
-  <ul>
-    <li>Python: Programming language used for development.</li>
-    <li>PyTorch: Deep learning framework for training and implementing the CycleGAN model.</li>
-    <li>OpenCV: Library for image processing and manipulation.</li>
-    <li>GUI Framework (e.g., Tkinter): Used for creating the user interface.</li>
-  </ul>
-
-  <h2 id="dataset">Dataset</h2>
-  <p>
-    The project requires a dataset of normal photos for training the CycleGAN model. The dataset should consist of unpaired images, containing only normal photos without corresponding coloring book line drawings. The dataset can be collected from various sources or created manually by gathering a diverse range of normal photos.
-  </p>
-
-  <h2 id="results">Results</h2>
-  <p>
-    The quality and realism of the generated coloring book images depend on the training data, model architecture, and the inherent characteristics of the input photos. The project aims to provide visually appealing coloring book versions that capture the essence and content of the original photos, bridging the gap between digital photography and traditional coloring activities.
-  </p>
-
-  <div class="image-gallery">
-    <div class="image-wrapper">
-      <img src="images/input.png" alt="Image 1">
+  <header class="university-header">
+    <div class="container">
+      <h1 class="university-header__title">CycleGAN Coloring Book Generator</h1>
+      <p class="university-header__description">Transform normal photos into coloring book versions using CycleGAN</p>
     </div>
-    <div class="image-wrapper">
-      <img src="images/1t.png" alt="Image 2">
+  </header>
+
+  <section class="university-section">
+    <div class="container">
+      <h2 class="university-section__title">Description</h2>
+      <p>
+        The CycleGAN Coloring Book Generator is a project that employs the CycleGAN architecture to transform normal photos into coloring book versions. By leveraging the power of CycleGAN, the project enables the conversion of images from one domain to another without the need for paired training data. The generator network learns to map images from the source domain to the target domain, while the discriminator network ensures the realism of the generated coloring book images. This project provides a user-friendly interface to facilitate the seamless generation of coloring book versions from user-supplied photographs.
+      </p>
     </div>
-    <div class="image-wrapper">
-      <img src="images/2t.png" alt="Image 3">
+  </section>
+
+  <section class="university-section bg-light">
+    <div class="container">
+      <h2 class="university-section__title">Motivation</h2>
+      <p>
+        The coloring book generator serves as an offline stress reduction alternative, providing individuals with a creative outlet to unwind and relax. Engaging in coloring activities has been shown to have therapeutic benefits, allowing individuals to escape from everyday stressors and focus their attention on a calming and enjoyable task. By using the coloring book generator, users can easily transform normal photos into coloring book versions, which encourages artistic expression and helps improve fine motor skills. This process can be seen as a hobby, allowing individuals to engage in a pleasurable and rewarding activity during their leisure time. One of the notable advantages of using the coloring book generator is the sense of achievement it brings. As users witness the transformation of their favorite photos into coloring book pages, they experience a sense of accomplishment and satisfaction. This feeling of achievement can boost self-confidence and provide a positive emotional experience. Overall, the coloring book generator serves as an enjoyable and fulfilling activity that promotes stress reduction, encourages artistic expression, improves motor skills, and provides a sense of achievement. By engaging in this offline hobby, individuals can enhance their well-being and find a creative outlet for relaxation and self-expression.
+      </p>
     </div>
-    <div class="image-wrapper">
-      <img src="images/3t.png" alt="Image 4">
+  </section>
+
+  <section class="university-section">
+    <div class="container">
+      <h2 class="university-section__title">Technologies</h2>
+      <ul>
+        <li>Python: Programming language used for development.</li>
+        <li>PyTorch: Deep learning framework for training and implementing the CycleGAN model.</li>
+        <li>OpenCV: Library for image processing and manipulation.</li>
+        <li>GUI Framework (e.g., Tkinter): Used for creating the user interface.</li>
+      </ul>
     </div>
-    <div class="image-wrapper">
-      <img src="images/4t.png" alt="Image 5">
+  </section>
+
+  <section class="university-section bg-light">
+    <div class="container">
+      <h2 class="university-section__title">Dataset</h2>
+      <p>
+        The project requires a dataset of normal photos for training the CycleGAN model. The dataset should consist of unpaired images, containing only normal photos without corresponding coloring book line drawings. The dataset can be collected from various sources or created manually by gathering a diverse range of normal photos.
+      </p>
     </div>
-    <div class="image-wrapper">
-      <img src="images/5t.png" alt="Image 6">
+  </section>
+
+  <section class="university-section">
+    <div class="container">
+      <h2 class="university-section__title">Results</h2>
+      <div class="row">
+        <div class="col-2">
+          <img src="path/to/input.jpg" alt="Input" title="Input">
+        </div>
+        <div class="col-2">
+          <img src="path/to/1st_try.jpg" alt="1st Try" title="1st Try">
+        </div>
+        <div class="col-2">
+          <img src="path/to/2nd_try.jpg" alt="2nd Try" title="2nd Try">
+        </div>
+        <div class="col-2">
+          <img src="path/to/3rd_try.jpg" alt="3rd Try" title="3rd Try">
+        </div>
+        <div class="col-2">
+          <img src="path/to/4th_try.jpg" alt="4th Try" title="4th Try">
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12">
+          <img src="path/to/actual_results.jpg" alt="Actual Results" title="Actual Results" class="img-fluid">
+        </div>
+      </div>
     </div>
-  </div>
-  
+  </section>
+
+  <footer class="university-footer">
+    <div class="container">
+      <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
 </body>
+
 </html>
